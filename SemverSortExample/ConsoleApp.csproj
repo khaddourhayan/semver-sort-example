@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CoreLibCaller\CoreLibCaller.csproj" />
+    <ProjectReference Include="..\ModelsLib\SemverLib2.csproj" />
   </ItemGroup>
 
 </Project>

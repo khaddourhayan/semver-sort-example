@@ -24,6 +24,14 @@ namespace SemverLib
 
         public static void Run()
         {
+            var f4 = GetSemVersion3List();
+            f4 = f4.OrderByDescending(c => c);
+            Console.WriteLine("############### F3 ################");
+            foreach (var f in f4)
+            {
+                Console.WriteLine(f);
+            }
+
             Console.WriteLine("############### F0 ################");
             var f0 = GetSemVersion3List().OrderByDescending(c => c, SemVersion.SortOrderComparer);
             foreach (var f in f0)
